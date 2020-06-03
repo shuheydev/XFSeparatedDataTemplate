@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<?xaml-comp compile="true"?>
+<ResourceDictionary
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:models="clr-namespace:XFSeparatedDataTemplate.Models">
+    <x:Array x:Key="SampleData" Type="{x:Type models:Book}">
+        <models:Book
+            Title="Title1"
+            AuthorName="Author1"
+            Description="Description1" />
+        <models:Book
+            Title="Title2"
+            AuthorName="Author1"
+            Description="Description2" />
+        <models:Book
+            Title="Title3"
+            AuthorName="Author1"
+            Description="Description3" />
+        <models:Book
+            Title="Title4"
+            AuthorName="Author1"
+            Description="Description4" />
+        <models:Book
+            Title="Title5"
+            AuthorName="Author1"
+            Description="Description5" />
+        <models:Book
+            Title="Title6"
+            AuthorName="Author1"
+            Description="Description6" />
+        <models:Book
+            Title="Title7"
+            AuthorName="Author1"
+            Description="Description7" />
+        <models:Book
+            Title="Title8"
+            AuthorName="Author1"
+            Description="Description8" />
+        <models:Book
+            Title="Title9"
+            AuthorName="Author1"
+            Description="Description9" />
+    </x:Array>
+</ResourceDictionary>

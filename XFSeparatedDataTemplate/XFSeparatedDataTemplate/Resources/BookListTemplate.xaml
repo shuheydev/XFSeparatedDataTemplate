@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<?xaml-comp compile="true"?>
+<ResourceDictionary
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:models="clr-namespace:XFSeparatedDataTemplate.Models">
+    <DataTemplate x:Key="BookDataTemplate" x:DataType="models:Book">
+        <Grid BackgroundColor="#60CAAD">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="20" />
+                <RowDefinition Height="30" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="30" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <Frame
+                Grid.Row="0"
+                Grid.Column="0"
+                BackgroundColor="#F17816"
+                BorderColor="Transparent"
+                HasShadow="False" />
+            <Frame
+                Grid.Row="1"
+                Grid.Column="0"
+                BackgroundColor="#FFB23B"
+                CornerRadius="30"
+                HasShadow="False" />
+            <Label
+                Grid.Row="0"
+                Grid.Column="1"
+                FontSize="Medium"
+                Text="{Binding AuthorName}" />
+            <Frame
+                Grid.Row="1"
+                Grid.Column="1"
+                Padding="0"
+                BackgroundColor="#16C4FD"
+                CornerRadius="5">
+                <Label Text="{Binding Description}" />
+            </Frame>
+        </Grid>
+    </DataTemplate>
+</ResourceDictionary>
